@@ -4,5 +4,5 @@ import { useState } from 'react'
 export function Avatar({ name, src = '/avatar.webp' }: { name: string; src?: string }) {
   const [failed, setFailed] = useState(false)
   if (failed) return null
-  return <img className="avatar" src={src} alt={`Portrait of ${name}`} width={112} height={112} onError={() => setFailed(true)} />
+  return <img className="avatar" src={src} alt={`Portrait of ${name}`} width={640} height={640} loading="lazy" decoding="async" onError={() => setFailed(true)} />
 }

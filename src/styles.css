@@ -167,3 +167,9 @@ footer{background:var(--footer-bg);border-top:1px solid var(--line)}
 html{overflow-x:clip}
 
 .form-success{display:grid;place-items:center;text-align:center;gap:12px;padding:48px 24px}.form-success svg{width:44px;height:44px;color:var(--accent,#0f8a76)}.form-success h3{margin:0}
+
+/* about portrait */
+.about-profile{gap:32px}
+.avatar{width:156px;height:156px;border-radius:32px;border:1px solid var(--line);box-shadow:0 0 0 5px var(--accent-soft),0 18px 40px rgba(0,0,0,.22);object-position:50% 30%}
+@media(max-width:650px){.avatar{width:120px;height:120px;border-radius:26px}}
+.avatar{background:linear-gradient(160deg,var(--accent-soft),var(--card));object-position:50% 20%}
