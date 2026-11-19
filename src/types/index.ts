@@ -1,3 +1,4 @@
-export interface Experience { company: string; role: string; startDate: string; endDate: string; description: string; achievements: string[]; technologies: string[] }
-export interface Project { id: string; title: string; eyebrow: string; description: string; problem: string; solution: string; role: string; architecture: string[]; challenges: string[]; outcome: string; technologies: string[]; github?: string; demo?: string; image?: string; images?: string[]; imageLabels?: string[] }
+export interface ExperienceGroup { title: string; items: string[] }
+export interface Experience { company: string; role: string; startDate: string; endDate: string; description: string; progression: { title: string; date: string }[]; metrics: { value: string; label: string }[]; groups: ExperienceGroup[]; technologies: string[] }
+export interface Project { id: string; title: string; eyebrow: string; description: string; problem: string; solution: string; role: string; architecture: string[]; challenges: string[]; outcome: string; technologies: string[]; github?: string; demo?: string; image?: string; images?: string[]; imagesLight?: string[]; imageLabels?: string[] }
 export interface SkillCategory { title: string; icon: 'server' | 'layout' | 'database' | 'blocks' | 'wrench' | 'plus'; skills: string[] }

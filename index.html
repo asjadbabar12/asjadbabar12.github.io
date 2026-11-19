@@ -3,13 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b0d10" />
+    <meta name="theme-color" content="#07090a" />
+    <meta name="color-scheme" content="dark light" />
+    <script>
+      try { document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') === 'light' ? 'light' : 'dark' } catch (e) { document.documentElement.dataset.theme = 'dark' }
+    </script>
     <title>Asjad Babar | Senior Software Engineer</title>
     <meta name="description" content="Senior Software Engineer building secure business applications with .NET, React, TypeScript, ASP.NET Core, and SQL Server." />
     <meta property="og:title" content="Asjad Babar | Senior Software Engineer" />
     <meta property="og:description" content="Full-stack engineering portfolio focused on .NET, React, TypeScript, ASP.NET Core, and SQL Server." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:url" content="https://asjadbabar12.github.io/" />
+    <meta property="og:image" content="https://asjadbabar12.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Asjad Babar | Senior Software Engineer" />
+    <meta name="twitter:description" content="Full-stack engineer building secure business applications with .NET, React, TypeScript, and SQL Server." />
+    <meta name="twitter:image" content="https://asjadbabar12.github.io/og-image.png" />
+    <link rel="canonical" href="https://asjadbabar12.github.io/" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Person","name":"Asjad Babar","jobTitle":"Senior Software Engineer","url":"https://asjadbabar12.github.io/","sameAs":["https://github.com/asjadbabar","https://linkedin.com/in/asjad-babar-1b97053b1"],"knowsAbout":[".NET","ASP.NET Core","React","TypeScript","SQL Server"]}
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
